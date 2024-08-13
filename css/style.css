@@ -327,31 +327,93 @@ footer a {
       height: 75px;
       width: 75px; } }
 
+main .sectionCarrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .sectionCarrito .carritoGeneral {
+    margin: 0.3125rem;
+    border: 0.0625rem solid black;
+    display: grid;
+    width: 60%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "sec-1-1 sec-1-1 sec-1-3 sec-1-4 sec-1-5" "sec-2-1 sec-2-1 sec-2-3 sec-2-4 sec-2-5" "sec-2-1 sec-2-1 sec-3-3 sec-3-4 sec-3-5" "sec-4-1 sec-4-2 sec-4-3 sec-4-4 sec-4-5" "sec-5-1 sec-5-2 sec-5-3 sec-5-4 sec-5-4" "sec-6-1 sec-6-2 sec-6-3 sec-6-4 sec-6-5"; }
+    main .sectionCarrito .carritoGeneral div {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    main .sectionCarrito .carritoGeneral .sec-1-1 {
+      grid-area: sec-1-1;
+      border-bottom: 1px solid black; }
+    main .sectionCarrito .carritoGeneral .sec-1-3 {
+      grid-area: sec-1-3;
+      border-bottom: 1px solid black; }
+    main .sectionCarrito .carritoGeneral .sec-1-4 {
+      grid-area: sec-1-4;
+      border-bottom: 1px solid black; }
+    main .sectionCarrito .carritoGeneral .sec-1-5 {
+      grid-area: sec-1-5;
+      border-bottom: 1px solid black; }
+    main .sectionCarrito .carritoGeneral .sec-2-1 {
+      grid-area: sec-2-1;
+      border-bottom: 1px solid black; }
+      main .sectionCarrito .carritoGeneral .sec-2-1 img {
+        width: 9.375rem;
+        height: 9.375rem; }
+    main .sectionCarrito .carritoGeneral .sec-2-3 {
+      grid-area: sec-2-3; }
+    main .sectionCarrito .carritoGeneral .sec-2-4 {
+      grid-area: sec-2-4; }
+    main .sectionCarrito .carritoGeneral .sec-2-5 {
+      grid-area: sec-2-5; }
+    main .sectionCarrito .carritoGeneral .sec-4-1 {
+      grid-area: sec-4-1; }
+    main .sectionCarrito .carritoGeneral .sec-5-1 {
+      grid-area: sec-5-1; }
+    main .sectionCarrito .carritoGeneral .sec-5-2 {
+      grid-area: sec-5-2; }
+    main .sectionCarrito .carritoGeneral .sec-5-4 {
+      grid-area: sec-5-4;
+      font-size: 30px;
+      font-weight: bolder; }
+    main .sectionCarrito .carritoGeneral .sec-6-1 {
+      grid-area: sec-6-1; }
+    main .sectionCarrito .carritoGeneral .sec-6-4 {
+      grid-area: sec-6-4;
+      border-radius: 0.625rem; }
+    main .sectionCarrito .carritoGeneral .sec-6-5 {
+      grid-area: sec-6-5;
+      background-color: #56D928;
+      border-radius: 0.625rem; }
+
 main .sectionContacto .contacto-general {
   display: flex;
   flex-direction: column;
   align-items: center; }
   main .sectionContacto .contacto-general h1 {
-    width: 600px;
+    width: 25rem;
     text-align: center; }
   main .sectionContacto .contacto-general form {
     display: flex;
     flex-direction: column;
+    width: 80%;
     padding: 0.625rem;
     align-items: center; }
     main .sectionContacto .contacto-general form input {
       margin: 0.625rem;
-      padding-left: 5px;
-      width: 25rem;
+      padding-left: 0.3125rem;
+      width: 500px;
       height: 3.125rem;
       border: 0.0625rem solid black;
       border-radius: 0.25rem;
       box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105); }
     main .sectionContacto .contacto-general form .inputTextoContacto {
       padding-left: 5px;
-      margin-top: 0.625rem;
-      width: 50rem;
-      height: 18.75rem;
+      margin: 0 0 15px 5px;
+      width: 80%;
+      height: 200px;
       text-align: justify;
       border: 0.0625rem solid black;
       border-radius: 0.25rem;
@@ -368,11 +430,12 @@ main .sectionContacto .contacto-general {
 
 @media (max-width: 900px) {
   main .sectionContacto .contacto-general h1 {
-    width: 400px; }
-  main .sectionContacto form textarea {
-    width: 200px;
-    background-color: red;
-    height: 300px; } }
+    width: 18.75rem; }
+  main .sectionContacto .contacto-general form input {
+    width: 90%; }
+  main .sectionContacto .contacto-general form .inputTextoContacto {
+    height: 400px;
+    width: 100%; } }
 
 main section .iniciarSesion {
   display: flex;
@@ -429,9 +492,6 @@ main .nosotros article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  filter: brightness(0.5);
   background: url(https://www.qloud.ar/SITES/IMG/shop-grey-music-07-2019/97_12-10-2022-03-10-33-a.jpg);
   background-size: cover;
   color: white; }
-  main .nosotros article p {
-    width: 600px; }
