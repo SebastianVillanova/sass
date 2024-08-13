@@ -1,15 +1,22 @@
+/* primero se llama a todo lo que corresponde a utilities */
+/* segundo se llama a todo lo que corresponde a base */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/* primero se llama a todo lo que corresponde a utilities */
-/* segundo se llama a todo lo que corresponde a base */
+a {
+  text-decoration: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
 /* tercero se llama a todo lo que corresponde al layout */
-/* header */
-/* poner el main del index.html */
-/* cuarto se llama a todo lo que corresponde al components*/
-/* al final siempre se llama a todo lo que corresponde al media*/
 header div {
   display: flex;
   flex-direction: row;
@@ -21,8 +28,7 @@ header div {
     header div .logo img {
       background-color: red;
       width: 150px;
-      border: 0.0625rem solid black;
-      border-radius: 0.1875rem; }
+      border: 0.0625rem solid black; }
   header div .d-flex input {
     display: flex;
     margin: 0.3125rem;
@@ -68,6 +74,48 @@ header .categorias {
     font-size: 0.9375rem;
     font-weight: 900; }
 
+footer .marcas .contenedorMarcas {
+  background-color: grey;
+  width: 100%;
+  height: 9.375rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  footer .marcas .contenedorMarcas div {
+    height: 100%; }
+    footer .marcas .contenedorMarcas div img {
+      width: 9.375rem;
+      align-self: center; }
+
+footer .footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: white;
+  background-color: black; }
+  footer .footer article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.625rem; }
+  footer .footer .seguinos .iconos {
+    display: flex;
+    justify-content: space-around; }
+    footer .footer .seguinos .iconos i {
+      padding: 10px; }
+    footer .footer .seguinos .iconos .facebook {
+      color: #0866ff; }
+    footer .footer .seguinos .iconos .instagram {
+      color: #fa8598; }
+    footer .footer .seguinos .iconos .youtube {
+      color: red; }
+
+footer a {
+  color: white;
+  margin: 0;
+  text-decoration: none; }
+
+/* poner el main del index.html */
 main .articulos {
   display: flex;
   justify-content: center; }
@@ -108,7 +156,7 @@ main .articulos {
       padding: 0;
       display: grid;
       width: 100%;
-      height: 100vh;
+      height: 51.25rem;
       grid-template-rows: repeat(3, 1fr);
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: "art-1 art-2 art-3" "art-4 art-5 art-6"; }
@@ -159,173 +207,6 @@ main .articulos {
       display: flex;
       justify-content: center;
       align-items: center; }
-
-footer .marcas .contenedorMarcas {
-  background-color: grey;
-  width: 100%;
-  height: 9.375rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-  footer .marcas .contenedorMarcas div {
-    height: 100%; }
-    footer .marcas .contenedorMarcas div img {
-      width: 9.375rem;
-      align-self: center; }
-
-footer .footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  color: white;
-  background-color: black; }
-  footer .footer article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.625rem; }
-  footer .footer .seguinos .iconos {
-    display: flex;
-    justify-content: space-around; }
-    footer .footer .seguinos .iconos i {
-      padding: 10px; }
-    footer .footer .seguinos .iconos .facebook {
-      color: #0866ff; }
-    footer .footer .seguinos .iconos .instagram {
-      color: #fa8598; }
-    footer .footer .seguinos .iconos .youtube {
-      color: red; }
-
-footer a {
-  color: white;
-  margin: 0;
-  text-decoration: none; }
-
-@media (max-width: 1280px) {
-  main .articulos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; }
-    main .articulos .filtro {
-      width: 304px; }
-    main .articulos .articulosVenta ul.cadaArticuloVenta {
-      list-style: none;
-      padding: 20px;
-      display: grid;
-      width: 100%;
-      height: 1200px;
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "art-1 art-2" "art-3 art-4" "art-5 art-6"; }
-      main .articulos .articulosVenta ul.cadaArticuloVenta li {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #ffffff;
-        margin: 5px;
-        height: 400px;
-        width: 300px;
-        border: 1px solid black;
-        border-radius: 7px;
-        list-style: none; }
-    main .articulos .articulosVenta nav {
-      display: flex;
-      margin-top: 4.375rem;
-      flex-direction: column;
-      align-items: center; } }
-
-@media (max-width: 900px) {
-  header div .botonesHeader {
-    display: flex;
-    flex-direction: column; }
-    header div .botonesHeader div {
-      display: flex;
-      justify-content: center; }
-  header div form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-  header .categorias {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0; }
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    footer .marcas {
-      width: 100%;
-      display: flex;
-      justify-content: space-evenly; }
-      footer .marcas .contenedorMarcas {
-        height: 100px; }
-        footer .marcas .contenedorMarcas div a img {
-          width: 100px;
-          height: 100%; }
-    footer .footer {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-direction: column; }
-      footer .footer article {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        border-bottom: 1px solid white;
-        width: 100%;
-        padding: 10px; } }
-
-@media (max-width: 697px) {
-  header div {
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: end;
-    align-items: center; }
-  header .categorias {
-    height: 12.5rem; }
-    header .categorias div {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-      justify-content: center; }
-  main .articulos {
-    justify-content: start; }
-    main .articulos .filtro {
-      width: 19rem; }
-    main .articulos .articulosVenta {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      main .articulos .articulosVenta nav {
-        display: flex;
-        flex-direction: column;
-        justify-self: end;
-        align-items: end; }
-      main .articulos .articulosVenta ul.cadaArticuloVenta {
-        list-style: none;
-        padding: 20px;
-        display: grid;
-        width: 100%;
-        height: 100%;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "art-1"  "art-2" "art-3" "art-4" "art-5" "art-6"; } }
-
-@media (max-width: 515px) {
-  footer .marcas .contenedorMarcas {
-    height: 75px; }
-    footer .marcas .contenedorMarcas div a img {
-      height: 75px;
-      width: 75px; } }
 
 main .sectionCarrito {
   display: flex;
@@ -428,15 +309,6 @@ main .sectionContacto .contacto-general {
     main .sectionContacto .contacto-general button:hover {
       background-color: #6edb46da; }
 
-@media (max-width: 900px) {
-  main .sectionContacto .contacto-general h1 {
-    width: 18.75rem; }
-  main .sectionContacto .contacto-general form input {
-    width: 90%; }
-  main .sectionContacto .contacto-general form .inputTextoContacto {
-    height: 400px;
-    width: 100%; } }
-
 main section .iniciarSesion {
   display: flex;
   flex-direction: column;
@@ -470,7 +342,153 @@ main section .iniciarSesion {
         height: 3.125rem;
         border-radius: 0.625rem; }
 
-@media (max-width: 690px) {
+main .nosotros article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+  main .nosotros article .imgFondoNosotros {
+    filter: brightness(0.5);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(https://www.qloud.ar/SITES/IMG/shop-grey-music-07-2019/97_12-10-2022-03-10-33-a.jpg);
+    position: absolute;
+    background-size: cover; }
+  main .nosotros article p {
+    width: 500px; }
+
+/* cuarto se llama a todo lo que corresponde al components*/
+/* al final siempre se llama a todo lo que corresponde al media*/
+@media (max-width: 1285px) {
+  main .articulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    main .articulos .filtro {
+      width: 304px; }
+    main .articulos .articulosVenta ul.cadaArticuloVenta {
+      list-style: none;
+      padding: 20px;
+      display: grid;
+      width: 100%;
+      height: 75rem;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "art-1 art-2" "art-3 art-4" "art-5 art-6"; }
+      main .articulos .articulosVenta ul.cadaArticuloVenta li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        margin: 5px;
+        height: 400px;
+        width: 300px;
+        border: 1px solid black;
+        border-radius: 7px;
+        list-style: none; }
+    main .articulos .articulosVenta nav {
+      display: flex;
+      margin-top: 4.375rem;
+      flex-direction: column;
+      align-items: center; } }
+
+@media (max-width: 900px) {
+  header div .botonesHeader {
+    display: flex;
+    flex-direction: column; }
+    header div .botonesHeader div {
+      display: flex;
+      justify-content: center; }
+  header div form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  header .categorias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .marcas {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly; }
+      footer .marcas .contenedorMarcas {
+        height: 100px; }
+        footer .marcas .contenedorMarcas div a img {
+          width: 100px;
+          height: 100%; }
+    footer .footer {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      footer .footer article {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        border-bottom: 1px solid white;
+        width: 100%;
+        padding: 10px; } }
+
+@media (max-width: 900px) {
+  main .sectionContacto .contacto-general h1 {
+    width: 18.75rem; }
+  main .sectionContacto .contacto-general form input {
+    width: 90%; }
+  main .sectionContacto .contacto-general form .inputTextoContacto {
+    height: 400px;
+    width: 100%; } }
+
+@media (max-width: 699px) {
+  header div {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+    align-items: center; }
+  header .categorias {
+    height: 12.5rem; }
+    header .categorias div {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      justify-content: center; }
+  main .articulos {
+    justify-content: start; }
+    main .articulos .filtro {
+      width: 19rem; }
+    main .articulos .articulosVenta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .articulos .articulosVenta nav {
+        display: flex;
+        flex-direction: column;
+        justify-self: end;
+        align-items: end; }
+      main .articulos .articulosVenta ul.cadaArticuloVenta {
+        list-style: none;
+        padding: 20px;
+        display: grid;
+        width: 100%;
+        height: 150.625rem;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "art-1"  "art-2" "art-3" "art-4" "art-5" "art-6"; }
   main section .iniciarSesion .login {
     width: 250px;
     padding: 15px;
@@ -487,11 +505,9 @@ main section .iniciarSesion {
       height: 50px;
       border-radius: 10px; } }
 
-main .nosotros article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url(https://www.qloud.ar/SITES/IMG/shop-grey-music-07-2019/97_12-10-2022-03-10-33-a.jpg);
-  background-size: cover;
-  color: white; }
+@media (max-width: 515px) {
+  footer .marcas .contenedorMarcas {
+    height: 75px; }
+    footer .marcas .contenedorMarcas div a img {
+      height: 75px;
+      width: 75px; } }

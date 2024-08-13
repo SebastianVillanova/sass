@@ -1,1 +1,119 @@
 /* poner el main del index.html */
+main {
+    .articulos{
+            display: flex;
+            justify-content: center;
+        .filtro{
+            margin: 1.25rem;
+            width: 300px;
+            height: 250px;
+            border: 0.0625rem solid black;
+            .filtroTitulo{
+                margin-left: 1.875rem;
+                margin-top: 0.625rem;
+                text-decoration: underline;
+            }
+            ul{
+                margin: 1.25rem;
+                padding: 0.3125rem;
+                list-style: none;
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.3125rem;
+                    .botonDesplegar{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 0.3125rem;
+                        box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
+                    
+                    }
+                    .precioMinMax{
+                        width: 3.75rem;
+                        height: 1.25rem;
+                        margin: 0 0.625rem 0 0.625rem;
+                        border: 0.0625rem solid black;
+                        border-radius: 0.3125rem;    
+                        box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
+                    
+                    }
+                }
+            }
+        }
+        .articulosVenta{
+            margin-top: 15px;
+            .cadaArticuloVenta{
+                list-style: none;
+                padding: 0;
+                display: grid;
+                width: 100%;
+                height: 51.25rem;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: 
+                "art-1 art-2 art-3"
+                "art-4 art-5 art-6";
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ffffff;
+                    margin: 0.3125rem;
+                    height: 25rem;
+                    width: 18.75rem;
+                    border: 0.0625rem solid black;
+                    border-radius: 0.4375rem;
+                    box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
+                    list-style: none;
+                    img{
+                        height: 12.5rem;
+                        width: 12.5rem;
+                        border: 0.0625rem solid black;
+                        border-radius: 0.4375rem;
+                        box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
+                    }
+                    p{
+                        margin: 0.625rem;
+                        font-size: 0.75rem;
+                    }
+                    button{
+                        display: flex;
+                        align-items: center;
+                        background-color: black;
+                        border: 0.0625rem solid black;
+                        border-radius: 0.1875rem;
+                        font-size: 0.625rem;
+                        box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
+                        color: white;
+                    }
+                }
+                .art-1{
+                    grid-area: art-1;
+                }
+                .art-2{
+                    grid-area: art-2;
+                }
+                .art-3{
+                    grid-area: art-3;
+                }
+                .art-4{
+                    grid-area: art-4;
+                }
+                .art-5{
+                    grid-area: art-5;
+                }
+                .art-6{
+                    grid-area: art-6;
+                }
+                
+            }
+            nav{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

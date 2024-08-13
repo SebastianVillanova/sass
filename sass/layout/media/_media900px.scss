@@ -1,0 +1,80 @@
+@media(max-width: 900px){
+    header {
+        div {
+            .botonesHeader{
+                display: flex;
+                flex-direction: column;
+                div{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        .categorias {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            // height: 400px;
+            padding: 0;
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .marcas{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            .contenedorMarcas{
+                height: 100px;
+                div a img{
+                    width:100px;
+                    height: 100%;
+                }
+            }
+        }
+        .footer{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            article{
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                border-bottom: 1px solid white;
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width:900px){
+    main .sectionContacto {
+        .contacto-general {
+            h1{
+                width: 18.75rem;    
+            }
+        
+        form {
+            input{
+                width: 90%;
+            }
+            .inputTextoContacto{
+                height: 400px;
+                width: 100%;
+        }
+        }
+    }
+    }
+}
