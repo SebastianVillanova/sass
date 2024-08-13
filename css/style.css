@@ -331,6 +331,9 @@ main .sectionContacto .contacto-general {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  main .sectionContacto .contacto-general h1 {
+    width: 600px;
+    text-align: center; }
   main .sectionContacto .contacto-general form {
     display: flex;
     flex-direction: column;
@@ -366,7 +369,69 @@ main .sectionContacto .contacto-general {
 @media (max-width: 900px) {
   main .sectionContacto .contacto-general h1 {
     width: 400px; }
-  main .sectionContacto form .inputTextoContacto {
-    width: 100px;
+  main .sectionContacto form textarea {
+    width: 200px;
     background-color: red;
     height: 300px; } }
+
+main section .iniciarSesion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  main section .iniciarSesion .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.9375rem;
+    margin: 0.625rem;
+    border: 0.0625rem solid black; }
+    main section .iniciarSesion .login input {
+      border-radius: 0.3125rem;
+      font-size: 25px;
+      margin: 0.625rem 0 0.625rem 0; }
+    main section .iniciarSesion .login a {
+      text-decoration: none;
+      align-self: end;
+      margin-right: 0.3125rem; }
+    main section .iniciarSesion .login .botonesLogin {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.25rem 0 1.25rem 0;
+      margin: 0.625rem; }
+      main section .iniciarSesion .login .botonesLogin button {
+        margin: 0.625rem;
+        padding: 0.625rem;
+        width: 18.75rem;
+        height: 3.125rem;
+        border-radius: 0.625rem; }
+
+@media (max-width: 690px) {
+  main section .iniciarSesion .login {
+    width: 250px;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid black; }
+    main section .iniciarSesion .login input {
+      border-radius: 5px;
+      font-size: 1.5625rem;
+      margin: 10px 0 10px 0; }
+    main section .iniciarSesion .login .botonesLogin button {
+      margin: 10px;
+      padding: 10px;
+      width: 100%;
+      height: 50px;
+      border-radius: 10px; } }
+
+main .nosotros article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.5);
+  background: url(https://www.qloud.ar/SITES/IMG/shop-grey-music-07-2019/97_12-10-2022-03-10-33-a.jpg);
+  background-size: cover;
+  color: white; }
+  main .nosotros article p {
+    width: 600px; }
