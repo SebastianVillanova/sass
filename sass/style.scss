@@ -17,9 +17,11 @@
 
 /* cuarto se llama a todo lo que corresponde al components*/
 
+@import"./components/button";
+
 /* al final siempre se llama a todo lo que corresponde al media*/
 
-@import "./layout/media/media1285px.scss";
+@import "./layout/media/media1295px.scss";
 @import "./layout/media/media900px.scss";
 @import "./layout/media/media699px.scss";
 @import "./layout/media/media515px.scss";

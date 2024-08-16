@@ -1,4 +1,20 @@
-@media(max-width: 1285px){
+@media(max-width: 1295px){
+    header {
+        div .d-flex{
+            input{
+                width: 400px;
+            }
+        }
+        .botonesHeader{
+            display: flex;
+            flex-direction: column;
+            
+            div{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
     main .articulos{
         display: flex;
         flex-direction: column;
