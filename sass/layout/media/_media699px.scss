@@ -30,51 +30,56 @@
     }
     main .articulos{
         justify-content: start;
-        .filtro{
-            width: 19rem;
-        }
-        .articulosVenta{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            // height: 159.375rem;
-            nav{
+        .filtroArticulos{
+            .filtro{
+                width: 19rem;
+            }
+            .articulosVenta{
                 display: flex;
                 flex-direction: column;
-                justify-self: end;
-                align-items: end;
-            }
-            ul.cadaArticuloVenta{
-                list-style: none;
-                padding: 20px;
-                display: grid;
-                width: 100%;
-                height: 150.625rem;
-                grid-template-rows: repeat(6, 1fr);
-                grid-template-columns: repeat(1, 1fr);
-                grid-template-areas: 
-                "art-1" 
-                "art-2"
-                "art-3"
-                "art-4"
-                "art-5"
-                "art-6";
+                justify-content: center;
+                align-items: center;
+                // height: 159.375rem;
+                ul.cadaArticuloVenta{
+                    list-style: none;
+                    padding: 20px;
+                    display: grid;
+                    width: 100%;
+                    height: 150.625rem;
+                    grid-template-rows: repeat(6, 1fr);
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-areas: 
+                    "art-1" 
+                    "art-2"
+                    "art-3"
+                    "art-4"
+                    "art-5"
+                    "art-6";
+                }
             }
         }
+        nav{
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
+        }
+        
     }
     main section .iniciarSesion{
         .login{
-            width: 250px;
-            padding: 15px;
-            margin: 10px;
-            border: 1px solid black;
+            width: 15.625rem;
+            padding: 0.9375rem;
+            margin: 0.625rem;
+            border: 0.0625rem solid black;
             input{
                 border-radius: 5px;
                 font-size: 1.5625rem;
                 margin:  10px 0 10px 0;
             }
             .botonesLogin{
+                display: flex;
+                flex-direction: column-reverse;
                 button{
                     margin: 10px;
                     padding: 10px;

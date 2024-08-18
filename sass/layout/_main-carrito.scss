@@ -3,6 +3,7 @@ main .sectionCarrito{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     .carritoGeneral{
         margin: 0.3125rem;
         border: 0.0625rem solid black;
@@ -87,6 +88,10 @@ main .sectionCarrito{
             grid-area: sec-6-5;
             background-color: #56D928;
             border-radius: 0.625rem;
+        }
+        button{
+            margin: 10px;
+            
         }
     }
 }

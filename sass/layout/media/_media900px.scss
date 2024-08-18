@@ -64,13 +64,11 @@
     }
 }
 
-@media(max-width:900px){
-    main .sectionContacto {
-        .contacto-general {
-            h1{
-                width: 18.75rem;    
-            }
-        
+main .sectionContacto{
+    .contacto-general{
+        h1{
+            width: 18.75rem;    
+        }
         form {
             input{
                 width: 90%;
@@ -78,8 +76,7 @@
             .inputTextoContacto{
                 height: 400px;
                 width: 100%;
+            }
         }
-        }
-    }
     }
 }

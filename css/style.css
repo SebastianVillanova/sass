@@ -46,6 +46,8 @@ header div {
     border: 0.0313rem solid #000;
     box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
     text-decoration: none; }
+    header div .botonesHeader a:hover {
+      border: 1px solid white; }
   header div .botonesHeader div {
     margin-right: 10px;
     align-self: center;
@@ -78,14 +80,13 @@ header .categorias {
     border-radius: 0.25rem;
     margin: 0.1875rem;
     font-size: 0.9375rem;
-    font-weight: 650; }
+    font-weight: 650;
+    transition: transform 0.5s ease; }
     header .categorias button:hover {
       background-color: black;
       border: none;
-      transform: translate(0, -10px);
-      transition-timing-function: linear;
-      transition-duration: 1s;
-      transition-delay: 0.6s; }
+      transform: translate(0, -5px);
+      transition: transform 0.5s ease; }
 
 footer .marcas .contenedorMarcas {
   background-color: grey;
@@ -94,12 +95,14 @@ footer .marcas .contenedorMarcas {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
-  footer .marcas .contenedorMarcas div {
-    height: 100%; }
-    footer .marcas .contenedorMarcas div div div img {
-      width: 150px;
-      height: 250px;
-      align-self: center; }
+  footer .marcas .contenedorMarcas div div div img {
+    width: 150px;
+    height: 250px;
+    align-self: center; }
+  footer .marcas .contenedorMarcas div .carousel-control-next, footer .marcas .contenedorMarcas div .carousel-control-prev {
+    box-shadow: none; }
+    footer .marcas .contenedorMarcas div .carousel-control-next:active, footer .marcas .contenedorMarcas div .carousel-control-prev:active {
+      box-shadow: none; }
 
 footer .footer {
   display: flex;
@@ -130,42 +133,42 @@ footer a {
   text-decoration: none; }
 
 /* poner el main del index.html */
-main .articulos {
+main .articulos .filtroArticulos {
   display: flex;
   justify-content: center; }
-  main .articulos .filtro {
+  main .articulos .filtroArticulos .filtro {
     margin: 1.25rem;
     width: 300px;
     height: 250px;
     border: 0.0625rem solid black; }
-    main .articulos .filtro .filtroTitulo {
+    main .articulos .filtroArticulos .filtro .filtroTitulo {
       margin-left: 1.875rem;
       margin-top: 0.625rem;
       text-decoration: underline; }
-    main .articulos .filtro ul {
+    main .articulos .filtroArticulos .filtro ul {
       margin: 1.25rem;
       padding: 0.3125rem;
       list-style: none; }
-      main .articulos .filtro ul li {
+      main .articulos .filtroArticulos .filtro ul li {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0.3125rem; }
-        main .articulos .filtro ul li .botonDesplegar {
+        main .articulos .filtroArticulos .filtro ul li .botonDesplegar {
           width: 30px;
           height: 30px;
           border-radius: 0.3125rem;
           box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105); }
-        main .articulos .filtro ul li .precioMinMax {
+        main .articulos .filtroArticulos .filtro ul li .precioMinMax {
           width: 3.75rem;
           height: 1.25rem;
           margin: 0 0.625rem 0 0.625rem;
           border: 0.0625rem solid black;
           border-radius: 0.3125rem;
           box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105); }
-  main .articulos .articulosVenta {
+  main .articulos .filtroArticulos .articulosVenta {
     margin-top: 15px; }
-    main .articulos .articulosVenta .cadaArticuloVenta {
+    main .articulos .filtroArticulos .articulosVenta .cadaArticuloVenta {
       list-style: none;
       padding: 0;
       display: grid;
@@ -174,7 +177,7 @@ main .articulos {
       grid-template-rows: repeat(3, 1fr);
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: "art-1 art-2 art-3" "art-4 art-5 art-6"; }
-      main .articulos .articulosVenta .cadaArticuloVenta li {
+      main .articulos .filtroArticulos .articulosVenta .cadaArticuloVenta li {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -187,16 +190,16 @@ main .articulos {
         border-radius: 0.4375rem;
         box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
         list-style: none; }
-        main .articulos .articulosVenta .cadaArticuloVenta li img {
+        main .articulos .filtroArticulos .articulosVenta .cadaArticuloVenta li img {
           height: 12.5rem;
           width: 12.5rem;
           border: 0.0625rem solid black;
           border-radius: 0.4375rem;
           box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105); }
-        main .articulos .articulosVenta .cadaArticuloVenta li p {
+        main .articulos .filtroArticulos .articulosVenta .cadaArticuloVenta li p {
           margin: 0.625rem;
           font-size: 0.75rem; }
-        main .articulos .articulosVenta .cadaArticuloVenta li button {
+        main .articulos .filtroArticulos .articulosVenta .cadaArticuloVenta li button {
           display: flex;
           align-items: center;
           background-color: black;
@@ -205,22 +208,25 @@ main .articulos {
           font-size: 0.625rem;
           box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
           color: white; }
-      main .articulos .articulosVenta .cadaArticuloVenta .art-1 {
+      main .articulos .filtroArticulos .articulosVenta .cadaArticuloVenta .art-1 {
         grid-area: art-1; }
-      main .articulos .articulosVenta .cadaArticuloVenta .art-2 {
+      main .articulos .filtroArticulos .articulosVenta .cadaArticuloVenta .art-2 {
         grid-area: art-2; }
-      main .articulos .articulosVenta .cadaArticuloVenta .art-3 {
+      main .articulos .filtroArticulos .articulosVenta .cadaArticuloVenta .art-3 {
         grid-area: art-3; }
-      main .articulos .articulosVenta .cadaArticuloVenta .art-4 {
+      main .articulos .filtroArticulos .articulosVenta .cadaArticuloVenta .art-4 {
         grid-area: art-4; }
-      main .articulos .articulosVenta .cadaArticuloVenta .art-5 {
+      main .articulos .filtroArticulos .articulosVenta .cadaArticuloVenta .art-5 {
         grid-area: art-5; }
-      main .articulos .articulosVenta .cadaArticuloVenta .art-6 {
+      main .articulos .filtroArticulos .articulosVenta .cadaArticuloVenta .art-6 {
         grid-area: art-6; }
-    main .articulos .articulosVenta nav {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+
+main .articulos nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
 
 main .sectionCarrito {
   display: flex;
@@ -282,6 +288,8 @@ main .sectionCarrito {
       grid-area: sec-6-5;
       background-color: #56D928;
       border-radius: 0.625rem; }
+    main .sectionCarrito .carritoGeneral button {
+      margin: 10px; }
 
 main .sectionContacto .contacto-general {
   display: flex;
@@ -334,6 +342,7 @@ main section .iniciarSesion {
     justify-content: center;
     padding: 0.9375rem;
     margin: 0.625rem;
+    margin-bottom: 40px;
     border: 0.0625rem solid black; }
     main section .iniciarSesion .login input {
       border-radius: 0.3125rem;
@@ -345,14 +354,14 @@ main section .iniciarSesion {
       margin-right: 0.3125rem; }
     main section .iniciarSesion .login .botonesLogin {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       padding: 1.25rem 0 1.25rem 0;
       margin: 0.625rem; }
       main section .iniciarSesion .login .botonesLogin button {
         margin: 0.625rem;
         padding: 0.625rem;
-        width: 18.75rem;
+        width: 9.375rem;
         height: 3.125rem;
         border-radius: 0.625rem; }
 
@@ -383,7 +392,6 @@ button {
   font-size: 1.35rem;
   padding: 0.375em 1em;
   font-weight: 600;
-  text-shadow: 0 0.0625em 0 #fff;
   box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef, 0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede, 0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
   transition: 0.15s ease;
   cursor: pointer; }
@@ -391,6 +399,26 @@ button {
 button:active {
   translate: 0 0.225em;
   box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef, 0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede, 0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece; }
+
+header .categorias button {
+  width: 7.5rem;
+  height: 3.125rem;
+  background-color: black;
+  border: 1px solid black;
+  box-shadow: none;
+  border-radius: 0.25rem;
+  margin: 0.1875rem;
+  font-size: 0.9375rem;
+  font-weight: 650;
+  transition: transform 0.5s ease; }
+  header .categorias button:hover {
+    background-color: black;
+    border: none;
+    transform: translate(0, -5px);
+    transition: transform 0.5s ease; }
+  header .categorias button:active {
+    --bs-btn-active-bg: black;
+    --bs-btn-active-border-color: black; }
 
 #teodio {
   margin-left: 15px;
@@ -409,14 +437,14 @@ button:active {
     header .botonesHeader div {
       display: flex;
       justify-content: center; }
-  main .articulos {
+  main .articulos .filtroArticulos {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%; }
-    main .articulos .filtro {
+    main .articulos .filtroArticulos .filtro {
       width: 304px; }
-    main .articulos .articulosVenta ul.cadaArticuloVenta {
+    main .articulos .filtroArticulos .articulosVenta ul.cadaArticuloVenta {
       list-style: none;
       padding: 20px;
       display: grid;
@@ -425,7 +453,7 @@ button:active {
       grid-template-rows: repeat(4, 1fr);
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "art-1 art-2" "art-3 art-4" "art-5 art-6"; }
-      main .articulos .articulosVenta ul.cadaArticuloVenta li {
+      main .articulos .filtroArticulos .articulosVenta ul.cadaArticuloVenta li {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -437,11 +465,11 @@ button:active {
         border: 1px solid black;
         border-radius: 7px;
         list-style: none; }
-    main .articulos .articulosVenta nav {
-      display: flex;
-      margin-top: 4.375rem;
-      flex-direction: column;
-      align-items: center; } }
+  main .articulos nav {
+    display: flex;
+    margin-top: 4.375rem;
+    flex-direction: column;
+    align-items: center; } }
 
 @media (max-width: 900px) {
   header div form {
@@ -485,14 +513,15 @@ button:active {
         width: 100%;
         padding: 10px; } }
 
-@media (max-width: 900px) {
-  main .sectionContacto .contacto-general h1 {
-    width: 18.75rem; }
-  main .sectionContacto .contacto-general form input {
-    width: 90%; }
-  main .sectionContacto .contacto-general form .inputTextoContacto {
-    height: 400px;
-    width: 100%; } }
+main .sectionContacto .contacto-general h1 {
+  width: 18.75rem; }
+
+main .sectionContacto .contacto-general form input {
+  width: 90%; }
+
+main .sectionContacto .contacto-general form .inputTextoContacto {
+  height: 400px;
+  width: 100%; }
 
 @media (max-width: 850px) {
   header div {
@@ -517,19 +546,14 @@ button:active {
       justify-content: center; }
   main .articulos {
     justify-content: start; }
-    main .articulos .filtro {
+    main .articulos .filtroArticulos .filtro {
       width: 19rem; }
-    main .articulos .articulosVenta {
+    main .articulos .filtroArticulos .articulosVenta {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      main .articulos .articulosVenta nav {
-        display: flex;
-        flex-direction: column;
-        justify-self: end;
-        align-items: end; }
-      main .articulos .articulosVenta ul.cadaArticuloVenta {
+      main .articulos .filtroArticulos .articulosVenta ul.cadaArticuloVenta {
         list-style: none;
         padding: 20px;
         display: grid;
@@ -538,21 +562,29 @@ button:active {
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "art-1"  "art-2" "art-3" "art-4" "art-5" "art-6"; }
+    main .articulos nav {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-items: center; }
   main section .iniciarSesion .login {
-    width: 250px;
-    padding: 15px;
-    margin: 10px;
-    border: 1px solid black; }
+    width: 15.625rem;
+    padding: 0.9375rem;
+    margin: 0.625rem;
+    border: 0.0625rem solid black; }
     main section .iniciarSesion .login input {
       border-radius: 5px;
       font-size: 1.5625rem;
       margin: 10px 0 10px 0; }
-    main section .iniciarSesion .login .botonesLogin button {
-      margin: 10px;
-      padding: 10px;
-      width: 100%;
-      height: 50px;
-      border-radius: 10px; } }
+    main section .iniciarSesion .login .botonesLogin {
+      display: flex;
+      flex-direction: column-reverse; }
+      main section .iniciarSesion .login .botonesLogin button {
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px; } }
 
 @media (max-width: 515px) {
   footer .marcas .contenedorMarcas {

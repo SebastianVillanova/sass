@@ -16,10 +16,10 @@
             </a>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <button class="btn btn-outline-success" id="teodio" type="submit">Buscar</button>
             </form>
             <div class="botonesHeader">
-                <a href="iniciar-sesion.html">
+                <a href="#">
                     <div class="icono-iniciaSesion">
                         <i class="fa-solid fa-right-to-bracket"></i>
                     </div>
@@ -32,7 +32,6 @@
                     <div class="botonISCarito">Carrito</div>
                 </a>
                 </Button>
-                <!-- <a href="" class="modoOscuro"><i class="fa-solid fa-moon"></i></a> -->
             </div>
         </div>
         <div class="categorias">
@@ -58,8 +57,8 @@
                     <input type="password" class="passLogin">
                     <a href="#">Olvidé mi contraseña</a>
                     <div class="botonesLogin">
-                        <button class="Ingresar">Ingresar</button>
                         <button class="Atras">Atras</button>
+                        <button class="Ingresar">Ingresar</button>
                     </div>
                 </div>
             </article>
@@ -68,18 +67,40 @@
     <footer>
         <section class="marcas">
             <div class="contenedorMarcas">
-                <div class="epiphone"><a href="" class="epiphone"><img src="../assets/epiphone.png" alt=""></a></div>
-                <div class="fender"><a href="" class="fender"><img src="../assets/fender.png" alt=""></a></div>
-                <div class="gibson"><a href="" class="gibson"><img src="../assets/gibson.png" alt=""></a></div>
-                <div class="marshall"><a href="" class="marshall"><img src="../assets/marshall.png" alt=""></a></div>
-                <div class="schecter"><a href="" class="schecter"><img src="../assets/schecter.png" alt=""></a></div>
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="../assets/epiphone.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../assets/fender.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../assets/gibson.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../assets/marshall.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../assets/schecter.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                </div>
             </div>
         </section>
         <section class="footer">
             <article class="atencionCliente">
                 <h2 class="h2AtencionCliente">Atención al cliente</h2>
                 <p><a href="" class="preguntasFrecuentes">Preguntas frecuentes</a></p>
-                <p><a href="" class="TyC">Terminos y Condiciones</a></p>
+                <p><a href="" class="TyC">Términos y Condiciones</a></p>
                 <p><a href="" class="metodosDePago">Métodos de pago</a></p>
             </article>
             <article class="contactanos">
@@ -100,5 +121,7 @@
             </article>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

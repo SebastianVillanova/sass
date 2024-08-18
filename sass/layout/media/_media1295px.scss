@@ -16,6 +16,8 @@
         }
     }
     main .articulos{
+        .filtroArticulos{
+            
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -50,12 +52,14 @@
                     list-style: none;
                 }
             }
+            
+        }
+    }
             nav{
                 display: flex;
                 margin-top: 4.375rem;
                 flex-direction: column;
                 align-items: center;
             }
-        }
     }
 }
