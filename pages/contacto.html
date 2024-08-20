@@ -50,15 +50,28 @@
     <main>
         <section class="sectionContacto">
             <div class="contacto-general">
-                <h1>Completá los campos para que nuestro equipo de atención al cliente pueda ayudarte</h1>
+                <div class="contacto">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>+54 3487 239151</p>
+                </div>
+                <div class="contacto">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>contacto@musicvector.com.ar</p>
+                </div>
+                <div class="contacto">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Siempre Viva 742, CABA - Buenos Aires</p>
+                </div>
+            </div>
+            <div class="completarForm">
                 <form action="">
-                    <label for="nombre"></label>
-                    <input class="inputNombre" type="text" name="nombre" id="nombre" placeholder="Nombre">
-                    <label for="correo"></label>
-                    <input class="inputCorreo" type="text" name="correo" id="correo" placeholder="Correo">
-                    <label for="telefono"></label>
-                    <input class="inputTelefono" type="number" name="telefono" id="telefono" placeholder="Teléfono">
-                    <label for="textoContacto"></label>
+                    <label for="nombre">Nombre</label>
+                    <input class="inputNombre" type="text" name="nombre" id="nombre" placeholder="ej: Pedro Rodriguez">
+                    <label for="correo">Email</label>
+                    <input class="inputCorreo" type="text" name="correo" id="correo" placeholder="ej: email@email.com">
+                    <label for="telefono">Teléfono</label>
+                    <input class="inputTelefono" type="number" name="telefono" id="telefono" placeholder="ej: 1123456525">
+                    <label for="textoContacto">Mensaje</label>
                     <textarea class="inputTextoContacto" name="message" placeholder="Escribe tu texto aquí..." required="" ></textarea>
                 </form>
                 <button>Enviar</button>

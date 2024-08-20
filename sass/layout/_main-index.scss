@@ -28,7 +28,6 @@ main {
                                 height: 30px;
                                 border-radius: 0.3125rem;
                                 box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
-                            
                             }
                             .precioMinMax{
                                 width: 3.75rem;
@@ -37,7 +36,6 @@ main {
                                 border: 0.0625rem solid black;
                                 border-radius: 0.3125rem;    
                                 box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
-                            
                             }
                         }
                     }
@@ -56,62 +54,110 @@ main {
                     "art-1 art-2 art-3"
                     "art-4 art-5 art-6";
                     li{
+                        position: relative;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
                         background-color: #ffffff;
-                    
-                    margin: 0.3125rem;
-                    height: 25rem;
-                    width: 18.75rem;
-                    border: 0.0625rem solid black;
-                    border-radius: 0.4375rem;
-                    box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
-                    list-style: none;
-                    img{
-                        height: 12.5rem;
-                        width: 12.5rem;
+                        margin: 0.3125rem;
+                        height: 400px;
+                        width: 18.75rem;
                         border: 0.0625rem solid black;
                         border-radius: 0.4375rem;
                         box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
+                        list-style: none;
+                        overflow: auto;
+                        &:hover{
+                            transform: scale(1.02);
+                        }
+                        .cardOferta{
+                            display: flex;
+                            background-color: red;
+                            margin-top: 10px;
+                            margin-left: -30px;
+                            width: 80%;
+                            font-weight: bold;
+                            justify-content: center;
+                            z-index: 1;
+                            transform: rotate(-22deg);
+                            align-self: self-start;
+                        }
+                        .imagenGuitarra {
+                            height: 200px;
+                            width: 200px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        p{
+                            margin: 0.625rem;
+                            font-size: 15px;
+                            text-align: justify;
+                        }
+                        div.precio{
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-between;
+                            
+                        }
+                        .precioYEfectivo{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            margin: 10px;
+                            
+                            .precioTarjeta{
+                                margin: 0;
+                                text-decoration: line-through;
+                                color: grey;
+                            }
+                            h3{
+                                align-self: center;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                span{
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                        button{
+                            display: flex;
+                            align-items: center;
+                            align-self: center;
+                            width: 125px; 
+                            height: 50px;
+                            margin: 10px;
+                            background-color: black;
+                            border: 0.0625rem solid black;
+                            border-radius: 0.1875rem;
+                            font-size: 0.625rem;
+                            box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
+                            color: white;
+                        }
                     }
-                    p{
-                        margin: 0.625rem;
-                        font-size: 0.75rem;
+                    .art-1{
+                        grid-area: art-1;
                     }
-                    button{
-                        display: flex;
-                        align-items: center;
-                        background-color: black;
-                        border: 0.0625rem solid black;
-                        border-radius: 0.1875rem;
-                        font-size: 0.625rem;
-                        box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
-                        color: white;
+                    .art-2{
+                        grid-area: art-2;
+                    }
+                    .art-3{
+                        grid-area: art-3;
+                    }
+                    .art-4{
+                        grid-area: art-4;
+                    }
+                    .art-5{
+                        grid-area: art-5;
+                    }
+                    .art-6{
+                        grid-area: art-6;
                     }
                 }
-                .art-1{
-                    grid-area: art-1;
-                }
-                .art-2{
-                    grid-area: art-2;
-                }
-                .art-3{
-                    grid-area: art-3;
-                }
-                .art-4{
-                    grid-area: art-4;
-                }
-                .art-5{
-                    grid-area: art-5;
-                }
-                .art-6{
-                    grid-area: art-6;
-                }
-                
             }
-        }
         }
         nav{
             display: flex;
