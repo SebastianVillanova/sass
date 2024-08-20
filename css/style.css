@@ -343,7 +343,8 @@ main .sectionContacto {
     padding: 15px; }
     main .sectionContacto .contacto-general .contacto {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      margin: 0.625rem; }
       main .sectionContacto .contacto-general .contacto p {
         margin: 0;
         margin-left: 10px; }
@@ -378,7 +379,8 @@ main .sectionContacto {
     margin-bottom: 3.125rem;
     background-color: #56D928;
     border: 0.0625rem solid black;
-    border-radius: 0.375rem; }
+    border-radius: 0.375rem;
+    align-self: center; }
     main .sectionContacto .completarForm button:hover {
       background-color: #6edb46da; }
 
