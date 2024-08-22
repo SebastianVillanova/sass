@@ -283,6 +283,7 @@ main .sectionCarrito {
   justify-content: center;
   align-items: center; }
   main .sectionCarrito .carritoGeneral {
+    background-color: white;
     margin: 0.3125rem;
     border: 0.0625rem solid black;
     display: grid;
@@ -307,8 +308,7 @@ main .sectionCarrito {
       grid-area: sec-1-5;
       border-bottom: 1px solid black; }
     main .sectionCarrito .carritoGeneral .sec-2-1 {
-      grid-area: sec-2-1;
-      border-bottom: 1px solid black; }
+      grid-area: sec-2-1; }
       main .sectionCarrito .carritoGeneral .sec-2-1 img {
         width: 9.375rem;
         height: 9.375rem; }
@@ -316,6 +316,10 @@ main .sectionCarrito {
       grid-area: sec-2-3; }
     main .sectionCarrito .carritoGeneral .sec-2-4 {
       grid-area: sec-2-4; }
+      main .sectionCarrito .carritoGeneral .sec-2-4 p button {
+        padding: 0;
+        width: 20px;
+        height: 20px; }
     main .sectionCarrito .carritoGeneral .sec-2-5 {
       grid-area: sec-2-5; }
     main .sectionCarrito .carritoGeneral .sec-4-1 {
@@ -524,7 +528,69 @@ header .categorias button {
     display: flex;
     margin-top: 4.375rem;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  main .sectionCarrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .sectionCarrito .carritoGeneral {
+      background-color: white;
+      margin: 0.3125rem;
+      border: 0.0625rem solid black;
+      display: grid;
+      width: 70%;
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "sec-1-1 sec-1-1 sec-1-3 sec-1-4" "sec-2-1 sec-2-1 sec-2-3 sec-2-4" "sec-2-1 sec-2-1 sec-3-3 sec-3-4" "sec-4-1 sec-4-2 sec-4-3 sec-4-4" "sec-5-1 sec-5-2 sec-5-3 sec-5-4" "sec-6-1 sec-6-2 sec-6-3 sec-6-4"; }
+      main .sectionCarrito .carritoGeneral .sec-1-1 {
+        grid-area: sec-1-1;
+        border-bottom: 1px solid black; }
+      main .sectionCarrito .carritoGeneral .sec-1-3 {
+        grid-area: sec-1-3;
+        border-bottom: 1px solid black; }
+      main .sectionCarrito .carritoGeneral .sec-1-4 {
+        grid-area: sec-3-3;
+        border-bottom: none; }
+      main .sectionCarrito .carritoGeneral .sec-1-5 {
+        grid-area: sec-1-4;
+        border-bottom: 1px solid black; }
+      main .sectionCarrito .carritoGeneral .sec-2-1 {
+        grid-area: sec-2-1; }
+        main .sectionCarrito .carritoGeneral .sec-2-1 img {
+          width: 9.375rem;
+          height: 9.375rem; }
+      main .sectionCarrito .carritoGeneral .sec-2-3 {
+        grid-area: sec-2-3; }
+      main .sectionCarrito .carritoGeneral .sec-2-4 {
+        grid-area: sec-4-3; }
+        main .sectionCarrito .carritoGeneral .sec-2-4 p button {
+          padding: 0;
+          width: 20px;
+          height: 20px; }
+      main .sectionCarrito .carritoGeneral .sec-2-5 {
+        grid-area: sec-2-4; }
+      main .sectionCarrito .carritoGeneral .sec-4-1 {
+        grid-area: sec-4-1; }
+      main .sectionCarrito .carritoGeneral .sec-5-1 {
+        grid-area: sec-5-1; }
+      main .sectionCarrito .carritoGeneral .sec-5-2 {
+        grid-area: sec-5-2; }
+      main .sectionCarrito .carritoGeneral .sec-5-4 {
+        grid-area: sec-5-4;
+        font-size: 30px;
+        font-weight: bolder; }
+      main .sectionCarrito .carritoGeneral .sec-6-1 {
+        grid-area: sec-6-1; }
+      main .sectionCarrito .carritoGeneral .sec-6-4 {
+        grid-area: sec-6-3;
+        border-radius: 0.625rem; }
+      main .sectionCarrito .carritoGeneral .sec-6-5 {
+        grid-area: sec-6-4;
+        background-color: #56D928;
+        border-radius: 0.625rem; }
+      main .sectionCarrito .carritoGeneral button {
+        margin: 10px; } }
 
 @media (max-width: 900px) {
   header div form {

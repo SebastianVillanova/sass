@@ -4,6 +4,7 @@ main .sectionCarrito{
     justify-content: center;
     align-items: center;
     .carritoGeneral{
+        background-color: white;
         margin: 0.3125rem;
         border: 0.0625rem solid black;
         display: grid;
@@ -40,7 +41,6 @@ main .sectionCarrito{
         }
         .sec-2-1{
             grid-area: sec-2-1;
-            border-bottom: 1px solid black;
             img{
                 width: 9.375rem;
                 height: 9.375rem;
@@ -52,7 +52,13 @@ main .sectionCarrito{
         }
         .sec-2-4{
             grid-area: sec-2-4;
-            
+            p{
+                button{
+                    padding: 0;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
         }
         .sec-2-5{
             grid-area: sec-2-5;
