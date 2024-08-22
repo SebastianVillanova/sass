@@ -14,4 +14,24 @@
             }
         }
     }
+    main .sectionContacto{
+        .contacto-general{
+            margin-top: 20px;
+        }
+        .completarForm{
+            width: 100%;
+            form{
+                align-items: center;
+                width: 100%;
+                input{
+                    width: 80%;
+                }
+                .inputTextoContacto{
+                    width: 80%;
+                }
+            }
+        }
+    }
 }
+
+

@@ -19,7 +19,6 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            // height: 400px;
             padding: 0;
         }
     }
@@ -62,21 +61,27 @@
             }
         }
     }
-}
-
-main .sectionContacto{
-    .contacto-general{
-        h1{
-            width: 18.75rem;    
-        }
-        form {
-            input{
-                width: 90%;
+    
+    main .sectionContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .contacto-general{
+            h1{
+                width: 18.75rem;    
             }
-            .inputTextoContacto{
-                height: 400px;
-                width: 100%;
+            form {
+                input{
+                    width: 90%;
+                }
+                .inputTextoContacto{
+                    height: 400px;
+                    width: 100%;
+                }
             }
         }
     }
+    
 }

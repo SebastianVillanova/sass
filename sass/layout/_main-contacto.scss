@@ -8,7 +8,7 @@ main .sectionContacto {
         flex-direction: column;
         align-items: start;
         padding: 15px;
-        
+        margin-top: 30px;
         .contacto{
             display: flex;
             align-items: center;
@@ -20,6 +20,7 @@ main .sectionContacto {
         }
     }
     .completarForm{
+        margin-top: 30px;
             form{
                 display: flex;
                 flex-direction: column;

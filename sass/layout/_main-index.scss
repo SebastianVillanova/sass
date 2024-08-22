@@ -1,13 +1,14 @@
 /* poner el main del index.html */
 main {
+    background-color: #eee;
     .articulos{
         .filtroArticulos{
                 display: flex;
                 justify-content: center;
                 .filtro{
                     margin: 1.25rem;
-                    width: 300px;
-                    height: 250px;
+                    width: 19rem;
+                    height: 15.625rem;
                     border: 0.0625rem solid black;
                     .filtroTitulo{
                         margin-left: 1.875rem;
@@ -24,8 +25,8 @@ main {
                             align-items: center;
                             padding: 0.3125rem;
                             .botonDesplegar{
-                                width: 30px;
-                                height: 30px;
+                                width: 1.875rem;
+                                height: 1.875rem;
                                 border-radius: 0.3125rem;
                                 box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
                             }
@@ -47,7 +48,7 @@ main {
                     padding: 0;
                     display: grid;
                     width: 100%;
-                    height: 51.25rem;
+                    height: 880px;
                     grid-template-rows: repeat(3, 1fr);
                     grid-template-columns: repeat(3, 1fr);
                     grid-template-areas: 
@@ -57,30 +58,33 @@ main {
                         position: relative;
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
+                        justify-content: space-between;
                         align-items: center;
                         background-color: #ffffff;
                         margin: 0.3125rem;
-                        height: 400px;
-                        width: 18.75rem;
+                        height: 430px;
+                        width: 300px;
                         border: 0.0625rem solid black;
                         border-radius: 0.4375rem;
                         box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
                         list-style: none;
+                        cursor: pointer;
                         overflow: auto;
                         &:hover{
                             transform: scale(1.02);
                         }
                         .cardOferta{
                             display: flex;
+                            color: white;
                             background-color: red;
-                            margin-top: 10px;
-                            margin-left: -30px;
-                            width: 80%;
+                            margin-top: 30px;
+                            margin-left: -90px;
+                            width: 100%;
+                            font-size: large;
                             font-weight: bold;
                             justify-content: center;
                             z-index: 1;
-                            transform: rotate(-22deg);
+                            transform: rotate(-45deg);
                             align-self: self-start;
                         }
                         .imagenGuitarra {
@@ -89,18 +93,20 @@ main {
                             img{
                                 width: 100%;
                                 height: 100%;
+                                object-fit: cover;
                             }
                         }
                         p{
                             margin: 0.625rem;
                             font-size: 15px;
                             text-align: justify;
+                            cursor: text;
                         }
-                        div.precio{
+                        .precio{
                             display: flex;
                             width: 100%;
                             justify-content: space-between;
-                            
+                            cursor: text;
                         }
                         .precioYEfectivo{
                             display: flex;
@@ -136,6 +142,10 @@ main {
                             font-size: 0.625rem;
                             box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
                             color: white;
+                            cursor: pointer;
+                            p{
+                                cursor: pointer;
+                            }
                         }
                     }
                     .art-1{

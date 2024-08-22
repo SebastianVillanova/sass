@@ -6,15 +6,20 @@ main .nosotros article{
     align-items: center;
     color: white;
     .imgFondoNosotros{
+        background-image: url("../assets/fondonosotros.jpg");
+        background-size: cover;  
         filter: brightness(0.5);
         width: 100%;
         height: 100%;
-        z-index: -1;
-        background: url(https://www.qloud.ar/SITES/IMG/shop-grey-music-07-2019/97_12-10-2022-03-10-33-a.jpg);
+        z-index: 0;
         position: absolute;
-        background-size: cover;  
     }
-    p{
-        width: 500px;
+    .parrafoNosotros, h1{
+            width: 500px;
+            z-index: 1;
+        }
+    .nuestroEquipo{
+        width: 600px;
+        z-index: 1;
     }
 }
