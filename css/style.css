@@ -708,6 +708,7 @@ header .categorias button {
         height: 50px;
         border-radius: 10px; }
   main .sectionCarrito .carritoGeneral {
+    width: 90%;
     grid-template-rows: repeat(7, 1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "sec-1-1 sec-1-1" "sec-2-1 sec-2-1" "sec-2-1 sec-2-1" "sec-4-1 sec-4-2" "sec-5-1 sec-5-2" "sec-6-1 sec-6-2" "sec-7-1 sec-7-1" "sec-8-1 sec-8-2" "sec-9-1 sec-9-2" "sec-10-1 sec-10-1" "sec-11-1 sec-11-2"; }

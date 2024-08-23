@@ -93,6 +93,7 @@
 
     main .sectionCarrito{
         .carritoGeneral{
+            width: 90%;
             grid-template-rows: repeat(7, 1fr);
             grid-template-columns: repeat(2, 1fr);
             grid-template-areas: 
