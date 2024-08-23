@@ -744,6 +744,8 @@ header .categorias button {
       grid-area: sec-8-1; }
     main .sectionCarrito .carritoGeneral .sec-5-2 {
       grid-area: sec-8-2; }
+      main .sectionCarrito .carritoGeneral .sec-5-2 input {
+        min-width: 40px; }
       main .sectionCarrito .carritoGeneral .sec-5-2 button {
         padding: 5px;
         width: 70px; }

@@ -107,7 +107,6 @@
             "sec-9-1 sec-9-2"
             "sec-10-1 sec-10-1"
             "sec-11-1 sec-11-2";
-
             .sec-1-1{
                 grid-area: sec-1-1;
             }
@@ -153,6 +152,9 @@
             }
             .sec-5-2{
                 grid-area: sec-8-2;
+                input{
+                    min-width: 40px;
+                }
                 button{
                     padding: 5px;
                     width: 70px;
