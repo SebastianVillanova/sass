@@ -3,13 +3,14 @@
     footer .marcas .contenedorMarcas{
         height: 100px;
         div{
-            height: 100%;   
-            div{
+            div.carousel-inner{
+                width: 100px;
+                height: 100px; 
                 div{
+                    height: 100%;
                     img{
-                        height: 100px;
+                        height: 100%;
                     }
-                    
                 }
             }
         }

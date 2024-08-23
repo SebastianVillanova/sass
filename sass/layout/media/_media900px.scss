@@ -1,7 +1,6 @@
 @media(max-width: 900px){
     header {
         div {
-            
             form{
                 display: flex;
                 flex-direction: column;
@@ -34,13 +33,14 @@
             .contenedorMarcas{
                 height: 150px;
                 div{
-                    height: 100%;   
-                    div{
+                    div.carousel-inner{
+                        width: 150px;
+                        height: 150px;   
                         div{
                             img{
-                                height: 150px;
+                                height: 100%;
+                                object-fit: cover;
                             }
-                            
                         }
                     }
                 }

@@ -8,12 +8,13 @@ footer{
             justify-content: space-evenly;
             align-items: center;
             div{
-                div{
+                div.carousel-inner{
+                    width: 250px;
+                    .carousel-item{
+                        transition:  0.2s ease-in;
+                    }
                     div{
                         img{
-                            width: 150px;
-                            height: 250px;
-                            align-self: center;
                         }
                     }
                 }
