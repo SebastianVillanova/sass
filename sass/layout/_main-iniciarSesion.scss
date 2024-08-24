@@ -37,9 +37,16 @@ main section {
                     padding: 0.625rem;
                     width: 9.375rem;
                     height: 3.125rem;
-                    background-color: white;
-                    border: 1px solid black;
                     border-radius: 0.625rem;
+                }
+                .Ingresar{
+                    background-color: #007bff;
+                    &:hover{
+                        background-color: #2991ff;
+                    }
+                }
+                .Atras:hover{
+                    background-color: #e4e4e4e1;
                 }
             }
         }

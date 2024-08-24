@@ -53,12 +53,11 @@ main .sectionContacto {
                 width: 12.5rem;
                 height: 3.125rem;
                 margin-bottom: 3.125rem;
-                background-color: #56D928;
-                border: 0.0625rem solid black;
-                border-radius: 0.375rem;
+                                border-radius: 0.375rem;
                 align-self: center;
+                background-color: #007bff;
                 &:hover{
-                    background-color: #6edb46da;
+                    background-color: #2991ff;
             }
         }
     }

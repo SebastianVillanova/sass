@@ -346,6 +346,8 @@ main .sectionCarrito {
       justify-content: start; }
     main .sectionCarrito .carritoGeneral .sec-5-2 {
       grid-area: sec-5-2; }
+      main .sectionCarrito .carritoGeneral .sec-5-2 button:hover {
+        background-color: #e4e4e4e1; }
     main .sectionCarrito .carritoGeneral .sec-5-4 {
       grid-area: sec-5-4;
       text-align: center; }
@@ -356,11 +358,15 @@ main .sectionCarrito {
     main .sectionCarrito .carritoGeneral .sec-6-4 {
       grid-area: sec-6-4;
       border-radius: 0.625rem; }
+      main .sectionCarrito .carritoGeneral .sec-6-4:hover {
+        background-color: #e4e4e4e1; }
     main .sectionCarrito .carritoGeneral .sec-6-5 {
       grid-area: sec-6-5;
       color: white;
-      background-color: #007bff;
-      border-radius: 0.625rem; }
+      border-radius: 0.625rem;
+      background-color: #007bff; }
+      main .sectionCarrito .carritoGeneral .sec-6-5:hover {
+        background-color: #2991ff; }
     main .sectionCarrito .carritoGeneral button {
       margin: 10px; }
 
@@ -413,12 +419,11 @@ main .sectionContacto {
       width: 12.5rem;
       height: 3.125rem;
       margin-bottom: 3.125rem;
-      background-color: #56D928;
-      border: 0.0625rem solid black;
       border-radius: 0.375rem;
-      align-self: center; }
+      align-self: center;
+      background-color: #007bff; }
       main .sectionContacto .completarForm button:hover {
-        background-color: #6edb46da; }
+        background-color: #2991ff; }
 
 main section .iniciarSesion {
   display: flex;
@@ -455,9 +460,13 @@ main section .iniciarSesion {
         padding: 0.625rem;
         width: 9.375rem;
         height: 3.125rem;
-        background-color: white;
-        border: 1px solid black;
         border-radius: 0.625rem; }
+      main section .iniciarSesion .login .botonesLogin .Ingresar {
+        background-color: #007bff; }
+        main section .iniciarSesion .login .botonesLogin .Ingresar:hover {
+          background-color: #2991ff; }
+      main section .iniciarSesion .login .botonesLogin .Atras:hover {
+        background-color: #e4e4e4e1; }
 
 main .nosotros article {
   position: relative;

@@ -81,6 +81,9 @@ main .sectionCarrito{
         }
         .sec-5-2{
             grid-area: sec-5-2;
+            button:hover{
+                background-color: #e4e4e4e1;
+            }
         }
         .sec-5-4{
             grid-area: sec-5-4;
@@ -96,12 +99,18 @@ main .sectionCarrito{
         .sec-6-4{
             grid-area: sec-6-4;
             border-radius: 0.625rem;
+            &:hover{
+                background-color: #e4e4e4e1;
+            }
         }
         .sec-6-5{
             grid-area: sec-6-5;
             color: white;
-            background-color: #007bff;
             border-radius: 0.625rem;
+            background-color: #007bff;
+                    &:hover{
+                        background-color: #2991ff;
+                    }
         }
         button{
             margin: 10px;
