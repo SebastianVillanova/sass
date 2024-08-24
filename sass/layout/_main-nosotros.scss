@@ -7,19 +7,29 @@ main .nosotros article{
     color: white;
     .imgFondoNosotros{
         background-image: url("../assets/fondonosotros.jpg");
-        background-size: cover;  
-        filter: brightness(0.5);
+        background-size: cover;
+        filter: brightness(0.4);
         width: 100%;
         height: 100%;
         z-index: 0;
         position: absolute;
     }
-    .parrafoNosotros, h1{
-            width: 500px;
+    .parrafoNosotros {
+            width: 90%;
             z-index: 1;
-        }
-    .nuestroEquipo{
-        width: 600px;
-        z-index: 1;
+            margin: 50px 0;
+
+            div{
+                display: flex;
+                margin-top: 50px;
+                width: 100%;
+                justify-content: space-between;
+                p{
+                    display: flex;
+                    padding: 0 50px 0 50px;
+                    justify-content: center;
+                }
+            }
+
     }
 }

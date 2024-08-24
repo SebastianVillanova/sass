@@ -16,7 +16,6 @@
                 }
             }
         } 
-        
         .categorias{
             height: 12.5rem;
             div{
@@ -178,5 +177,31 @@
             }
         }
     }
-}
+    
+    main .nosotros article .parrafoNosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            img{
+                object-fit: contain;
+            }
+            p{
+                padding: 0;
+                justify-content: start;
+                margin-top: 30px;
+            }
 
+        }
+            .parrafoDos{
+                flex-direction: column-reverse;
+            }
+        
+    }
+    
+    
+}

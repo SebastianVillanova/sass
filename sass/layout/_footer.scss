@@ -44,10 +44,16 @@ footer{
                 display: flex;
                 justify-content: space-around;
                 i{
+                    margin: 0 5px ;
+                    background-color: white;
+                    border-radius: 50%;
                     padding: 10px;
                 }
                 .facebook{
                     color: #0866ff;
+                }
+                .twitter{
+                    color: black;
                 }
                 .instagram{
                     color: hsl(350, 92%, 75%);
@@ -55,7 +61,7 @@ footer{
                 .youtube{
                     color:red;
                 }
-            }
+        }
         }
     }
     a{

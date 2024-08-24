@@ -3,10 +3,10 @@ main .sectionCarrito{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px 0 ;
     .carritoGeneral{
         background-color: white;
         margin: 0.3125rem;
-
         border: 0.0625rem solid black;
         display: grid;
         width: 60%;
